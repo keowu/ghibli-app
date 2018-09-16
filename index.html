@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmes Estudio Ghibli</title>
+    <meta charset="UTF-8"> <!-- funcionara em navegadores americanos-->
+  <!--css externo-->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- css e scripts do modo chuva -->
+       <style>
+        .chuva{
+            background-image: url(./imagens/chuva.gif);
+            no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+             background-size: cover;
+        }
+        .normal{
+            background-image: url(./imagens/original.gif);
+            no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+             background-size: cover;
+        }
+        .neve{
+            background-image: url(./imagens/neve.gif);
+            repeat: none;
+            center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+             background-size: cover;
+        }
+    </style>
+    <script>
+        function normal(){
+            body.className='normal';
+        }
+        function chuva(){
+            body.className='chuva';
+        }
+        function neve(){
+            body.className='neve';
+        }
+    </script>
+    <!-- css e scripts do modo cuva -->
+
+</head>
+<body  class="normal" id="body">
+	<!-- OS JAVAscripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- fim dos scripts -->
+    
+      <!--musica -->
+      <audio autoplay loop>
+  <source src="totoro.mp3">
+  </audio>
+  <!-- fim musica -->
+<div class="container">
+     <div class="row">
+   		<div class="span6"><a href="https://www.google.com.br/search?q=studio+ghibli+meu+amigo+totoro&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2yE5W4gAxTc1MKrQ0M8qt9JPzc3JSk0sy8_P0C4ryU0rBzPjk_NyCxLzM1GKrtMyc3OJHjEncAi9_3BOWipy05uQ1xmAu4vUKqXGxueaVZJZUCslw8UohXKLBIMXNheDyAADiyIaPpwAAAA&npsic=0&sa=X&ved=0ahUKEwiH6IX91qvdAhVChZAKHaqeDgUQ-BYIJg" target="newwindow"><button class="btn btn-primary">Meu Amigo Totoro
+</button></a></div>
+   		<div class="span6"><a href="https://www.google.com.br/search?sa=X&q=studio+ghibli+a+viagem+de+chihiro&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2yE5W4gAxs8ySTLU0M8qt9JPzc3JSk0sy8_P0C4ryU0rBzPjk_NyCxLzM1GKrtMyc3OJHjEncAi9_3BOWipy05uQ1xmAu4vUKqXGxueaVZJZUCslw8UohXKLBIMXNheDyAABhhB_xpwAAAA&npsic=0&ved=0ahUKEwi3he7_1qvdAhUBQZAKHeWSDoUQ-BYIKQ" target="newwindow"><button class="btn btn-primary">A Viagem De Chihiro</button></a></div>
+   		<div class="span6"><a href="https://www.google.com.br/search?sa=X&q=studio+ghibli+o+castelo+animado&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2yE5WAjOTzAyKC7U0M8qt9JPzc3JSk0sy8_P0C4ryU0rBzPjk_NyCxLzM1GKrtMyc3OJHjEncAi9_3BOWipy05uQ1xmAu4vUKqXGxueaVZJZUCslw8UohnKLBIMXNheDyAABN-BBvqAAAAA&npsic=0&ved=0ahUKEwj7mcih9r_dAhWFUZAKHQ8_DJMQ-BYILA" target="newwindow"><button class="btn btn-primary">Castelo Animado</button></a></div>
+   		<div class="span6"><a href="https://www.google.com.br/search?sa=X&q=studio+ghibli+princesa+mononoke&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQ2yE5W4gAxzUyN0rQ0M8qt9JPzc3JSk0sy8_P0C4ryU0rBzPjk_NyCxLzM1GKrtMyc3OJHjEncAi9_3BOWipy05uQ1xmAu4vUKqXGxueaVZJZUCslw8UohXKLBIMXNheDyAAD55boNpwAAAA&npsic=0&ved=0ahUKEwi-4fCi9r_dAhVKOZAKHV5LCtgQ-BYILw" target="newwindow"><button class="btn btn-primary">Princesa Monoke</button></a></div>
+       <button type="button" onclick="chuva()" class="btn btn-light">chuva</button>
+       <button type="button" onclick="normal()" class="btn btn-light">normal</button>
+       <button type="button" onclick="neve()" class="btn btn-light">neve</button>
+</div>
+</div>
+<div class="container">
+  <div class="span6"></div><span class="badge badge-danger">Feito Como Homenagem.</span></div>
+  <h1 align="Center"><font color="Red">Os Melhores Filmes Do Estudio Ghibli</font></h1>
+</div>
+</body>
+</html>
